@@ -10,7 +10,7 @@ const routes = require("./routes");
 connectDb();
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://food-website-frontend-phi.vercel.app/"],
+    origin: ["http://localhost:5173","https://food-website-frontend-phi.vercel.app"],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     
     credentials: true,
