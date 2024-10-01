@@ -73,7 +73,7 @@ const login = async (req, res) => {
 // LOGOUT ROUTE
 const logout = async (req, res) => {
   try {
-    res.clearCookie("token").json({ success: true, message: "Logged Out" });
+    res.clearCookie("token",{path:"/"}).json({ success: true, message: "Logged Out" });
   } catch (error) {
     return res.status(500).json({ success: false, message: error.message });
   }
